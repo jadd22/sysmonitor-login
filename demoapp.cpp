@@ -108,3 +108,12 @@ void demoapp::on_pushButton_10_clicked()
 {
     QProcess::startDetached( "//bin//sh", QStringList() << ".//new.sh");
 }
+
+void demoapp::on_pushButton_11_clicked()
+{
+    QFile histfile(".//historyfile.txt");   /*write your file's path*/
+    if(!histfile.open(QIODevice::ReadOnly))
+            QMessageBox::information(0,"info",histfile.errorString());
+    QTextStream histobj(&histfile);
+    ui->textBrowser->setText(histobj.readAll());
+}

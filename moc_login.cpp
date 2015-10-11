@@ -82,7 +82,7 @@ void login::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
         switch (_id) {
         case 0: _t->openNewWindow(); break;
         case 1: _t->openNewWindow2(); break;
-        //case 2: _t->on_mMyButton_clicked(); break;
+       // case 2: _t->on_mMyButton_clicked(); break;
         case 3: _t->on_pushButton_clicked(); break;
         case 4: _t->on_signup_clicked(); break;
         default: ;

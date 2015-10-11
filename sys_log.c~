@@ -17,8 +17,8 @@ int main()
  system(c5);
  strcpy(c11,"cat /var/log/auth.log > new_auth_raw.txt");
  system(c11);
- strcpy(c12,"bash -ic 'tail -30 $HISTFILE' > historyfile.txt");
- system(c12);
+ //strcpy(c12,"grep -w 'sudo:' new_auth_raw.txt > 1.txt");
+ //system(c12);
  strcpy(c13,"grep -w 'su.*:' new_auth_raw.txt | tail -100 > sudo_demo.txt");
  system(c13);
   strcpy(c14,"grep -w 'systemd-logind.*:.*Lid.*' new_auth_raw.txt > lid.txt");

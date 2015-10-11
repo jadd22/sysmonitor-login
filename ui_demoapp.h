@@ -40,6 +40,7 @@ public:
     QPushButton *pushButton_6;
     QPushButton *pushButton_5;
     QPushButton *pushButton_8;
+    QPushButton *pushButton_11;
     QPushButton *pushButton_10;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -107,6 +108,11 @@ public:
 
         verticalLayout->addWidget(pushButton_8);
 
+        pushButton_11 = new QPushButton(layoutWidget);
+        pushButton_11->setObjectName(QStringLiteral("pushButton_11"));
+
+        verticalLayout->addWidget(pushButton_11);
+
         pushButton_10 = new QPushButton(centralWidget);
         pushButton_10->setObjectName(QStringLiteral("pushButton_10"));
         pushButton_10->setGeometry(QRect(0, 310, 110, 61));
@@ -135,6 +141,7 @@ public:
         pushButton_6->setText(QApplication::translate("demoapp", "SYS_DOWN-LOG", 0));
         pushButton_5->setText(QApplication::translate("demoapp", "BLUTOOTH-LOG", 0));
         pushButton_8->setText(QApplication::translate("demoapp", "EATHERNET-LOG", 0));
+        pushButton_11->setText(QApplication::translate("demoapp", "TERMINAL-LOG", 0));
         pushButton_10->setText(QApplication::translate("demoapp", "RFRESH", 0));
     } // retranslateUi
 
